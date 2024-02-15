@@ -1,10 +1,15 @@
-## Steps Taken to complete HW2
-- Installation and python setup
-- Installation of virtual environment
-- Testing the existing git HW Repo
-- Creating replica of the HW repo
-- Pip freeze documentation visit
-- Setting up the basic folder structure and files
-- Running pytest, with pylint and cov
-- Fixing the issues and errors listed in the result.
-- Commiting and pushing changes to a new git repo.
+## Steps Taken to complete part 2
+
+- Created multiply and add operations to operations.py
+- Added a division by zero error throw for divide operation
+- Added static methods to init.py
+- Created class structure for calculation.py
+- Created class method for the calculation class
+- Modified init.py to use the class method from calculation class
+- Added zero division test for operations
+- Added tests to check multiply and divide operations
+
+- Added modified files to git
+- Committed the added files
+- Created a new branch named part2
+- pushed the committed files to branch part2

@@ -1,4 +1,5 @@
 '''My Calculator Test'''
+import pytest
 from calculator.operations import add, multiply, subtract, divide
 
 def test_addition():
@@ -16,4 +17,6 @@ def test_multiplication():
 def test_division():
     '''Test division'''
     assert divide(2,2) == 1
+    with pytest.raises(ZeroDivisionError):  # Use a context manager to assert the exception
+        divide(2, 0)
     
