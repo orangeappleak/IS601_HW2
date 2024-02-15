@@ -1,14 +1,18 @@
+'''Calculation Class'''
+
 class Calculation:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
+    '''calculation class with the class method'''
+    def __init__(self, arg_a, arg_b):
+        self.arg_a = arg_a
+        self.arg_b = arg_b
+        self.operation = None  # Initialize operation attribute
 
     @classmethod
-    def create(cls, a, b, operation):
+    def create(cls, arg_a, arg_b, operation):
         """
         Creates a Calculation instance with the specified operation.
         """
-        instance = cls(a, b)
+        instance = cls(arg_a, arg_b)
         instance.operation = operation
         return instance
 
@@ -16,4 +20,6 @@ class Calculation:
         """
         Calculates the result using the stored operation function.
         """
-        return self.operation(self.a, self.b)
+        if self.operation is None:
+            raise ValueError("Operation is not defined")
+        return self.operation(self.arg_a, self.arg_b)

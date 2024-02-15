@@ -1,16 +1,27 @@
+'''Calculator Class'''
+
 from calculator.calculation import Calculation
 from calculator.operations import add, subtract, multiply, divide
 
+
 class Calculator:
+    '''Calculator Class with static methods'''
     @staticmethod
-    def add(a,b):
-        return Calculation.create(a,b,add).get_result()
+    def add(arg_a, arg_b):
+        '''adds the given arguments'''
+        return Calculation.create(arg_a, arg_b, add).get_result()
+
     @staticmethod
-    def subtract(a,b):
-        return Calculation.create(a,b,subtract).get_result()
+    def subtract(arg_a, arg_b):
+        '''subtracts the given arguments'''
+        return Calculation.create(arg_a, arg_b, subtract).get_result()
+
     @staticmethod
-    def multiply (a,b):
-        return Calculation.create(a,b,multiply).get_result()
+    def multiply(arg_a, arg_b):
+        '''multiplies the given arguments'''
+        return Calculation.create(arg_a, arg_b, multiply).get_result()
+
     @staticmethod
-    def divide(a,b):
-       return Calculation.create(a,b,divide).get_result()
+    def divide(arg_a, arg_b):
+        '''divides the given arguments'''
+        return Calculation.create(arg_a, arg_b, divide).get_result()

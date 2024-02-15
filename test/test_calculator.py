@@ -22,3 +22,4 @@ def test_zero_divide():
     '''Test that divide by zero throws a ZeroDivisionError'''
     with pytest.raises(ZeroDivisionError):  # Import pytest and use context manager
         Calculator.divide(2, 0)
+        
