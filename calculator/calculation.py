@@ -1,7 +1,9 @@
 '''Calculation Class'''
 
+
 class Calculation:
     '''calculation class with the class method'''
+
     def __init__(self, arg_a, arg_b):
         self.arg_a = arg_a
         self.arg_b = arg_b
@@ -15,6 +17,9 @@ class Calculation:
         instance = cls(arg_a, arg_b)
         instance.operation = operation
         return instance
+    def perform(self):
+        """Perform the stored calculation and return the result."""
+        return self.operation(self.arg_a, self.arg_b)
 
     def get_result(self):
         """
