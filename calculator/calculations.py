@@ -23,4 +23,15 @@ class Calculations:
     def clear_history(cls):
         """Clear the history of calculations."""
         cls.history.clear()
-        
+
+    @classmethod
+    def get_latest(cls) -> Calculation:
+        """Get the latest calculation. Returns None if there's no history."""
+        if cls.history:
+            return cls.history[-1]
+        return None
+
+    @classmethod
+    def find_by_operation(cls, operation_name: str) -> List[Calculation]:
+        """Find and return a list of calculations by operation name."""
+        return [calc for calc in cls.history if calc.operation.__name__ == operation_name]
