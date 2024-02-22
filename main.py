@@ -22,11 +22,11 @@ def calculate_and_print(a, b, operation_name):
         result = command.execute()
         print(f"The result of {a} {operation_name} {b} is equal to {result}")
     except (InvalidOperation, ZeroDivisionError) as e:
-        print(f"Error: {e}")
+        print(f"Invalid number input")
     except ValueError as e:
         print(e)
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred: this is {e}")
 
 def main():
     if len(sys.argv) != 4:

@@ -22,6 +22,6 @@ def test_operation(setup_calculations):
 
 def test_divide_by_zero():
     '''Testing the divide by zero exception'''
-    with pytest.raises(ZeroDivisionError, match="Division by zero is not possible"):
+    with pytest.raises(ValueError, match="Division by zero is not possible"):
         calculation = Calculation(Decimal('10'), Decimal('0'), divide)
         calculation.perform()
