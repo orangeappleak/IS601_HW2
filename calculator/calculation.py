@@ -28,5 +28,5 @@ class Calculation:
         Calculates the result using the stored operation function.
         """
         if self.operation is None:
-            raise ValueError("Operation is not defined")
+            raise ZeroDivisionError("Operation is not defined")
         return self.operation(self.arg_a, self.arg_b)
