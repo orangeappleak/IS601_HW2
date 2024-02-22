@@ -1,15 +1,9 @@
-## Steps Taken to complete part 2
+## Steps Taken to complete faker part 3
 
-- Created multiply and add operations to operations.py
-- Added a division by zero error throw for divide operation
-- Added static methods to init.py
-- Created class structure for calculation.py
-- Created class method for the calculation class
-- Modified init.py to use the class method from calculation class
-- Added zero division test for operations
-- Added tests to check multiply and divide operations
-
-- Added modified files to git
-- Committed the added files
-- Created a new branch named part2
-- pushed the committed files to branch part2
+-- Created a new branch caller fakerP3
+-- Created test_calculations.py and test_operations.py to test operations and calculations.
+-- pushed these first to github
+-- next created the conftest.py to genrate faker data to use for calculations and test.
+-- pushed the faker commands to github.
+-- next created main.py and added a test_main.py, modified the assertions and fixed some pylint issues.
+-- pushed all the changes to github, to branch fakerP3

@@ -1,3 +1,5 @@
+'''Test main'''
+
 import pytest
 from main import calculate_and_print  # Ensure this import matches your project structure
 
@@ -13,6 +15,7 @@ from main import calculate_and_print  # Ensure this import matches your project 
     ("5", "b", 'subtract', "Invalid number input")  # Testing another invalid number input
 ])
 def test_calculate_and_print(a_string, b_string, operation_string,expected_string, capsys):
+    '''Test calculate and print'''
     calculate_and_print(a_string, b_string, operation_string)
     captured = capsys.readouterr()
     assert captured.out.strip() == expected_string
